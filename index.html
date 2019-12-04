@@ -6,7 +6,7 @@
         <script type="text/javascript" src='js/tabletop1.3.4.js'></script>
         <script type="text/javascript" src='js/sheetsee.js'></script>
         <script type="text/javascript" src='js/leaflet.markercluster.js'></script>
-        <link rel="shortcut icon" href="https://www.kimley-horn.com/wp-content/uploads/2017/03/Kimley-Horn_Logo.svg"/>
+        <link rel="shortcut icon" href="https://www.kimley-horn.com/wp-content/uploads/2017/02/cropped-kimley-horn_favicon-100x100.png"/>
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link href='https://api.tiles.mapbox.com/mapbox.js/v1.4.0/mapbox.css' rel='stylesheet' />
@@ -92,17 +92,17 @@
 
     <script id="selectedSpot" type="text/html">
         {{#rows}}
-            <h4 class="fauxButton">SELECTED SPOT</h4>
+            <h4 class="fauxButton">SELECTED CLIENT</h4>
             <h2>{{name}}</h2>
             <p class="colorText">{{address}}<p>
             <p class="colorText">{{city}}{{#state}}, {{state}}{{/state}}{{#postcode}}, {{postcode}}{{/postcode}}</p>
             <ul>
-                <li><span class="category">Wifi:</span> {{wifipassword}}</li>
-                <li><span class="category">Outlets:</span> {{outlets}}</li>
-                <li><span class="category">Couch:</span> {{couch}}</li>
-                <li><span class="category">Large Table:</span> {{largetable}}</li>
-                <li><span class="category">Outdoor Seating:</span> {{outdoorseating}}</li>
-                <li><span class="category">Brewing:</span> {{brewing}}</li>
+                <li><span class="category">TEXT1:</span> {{wifipassword}}</li>
+                <li><span class="category">TEXT2:</span> {{outlets}}</li>
+                <li><span class="category">TEXT3:</span> {{couch}}</li>
+                <li><span class="category">TEXT4:</span> {{largetable}}</li>
+                <li><span class="category">TEXT5:</span> {{outdoorseating}}</li>
+                <li><span class="category">TEXT6:</span> {{brewing}}</li>
             </ul>
             <ul>
                 <li><a href="https://maps.google.com/maps?q={{address}},{{city}},{{state}}" target="_blank">View in Google Maps</a></li>
