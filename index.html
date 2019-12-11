@@ -41,23 +41,23 @@
             <div id="hackSpotsTable"></div>
         </div>
         <div id="info" class="container">
-            <h3>Contribute!</h3>
+            <h3>Easy Peasy</h3>
             <div id="theNumberofSpots"></div>
             <p>This cool website is hooked up to <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vR4K6FaQF0scQIwsURz801FsXrJfVqt2EMmSGymVPBmeMB005yv-XXsDbHCDA06T2CoE3_1Ika9TxNG/pubhtml" target="_blank">this Google Spreadsheet</a>, which I've shared, so click and add your favorite hack spots to the bottom of the list! For the map you'll need to <strong>get the lat and long</strong> of the spot, you can get that <a href="http://www.latlong.net/" target="_blank">here</a>. The locating of these places is helpful, so please try to fill out all the columns.</p>
 
             <h3>Info</h3>
             <p>jpetersen00@gmail.com</p>
 
-            <h3>PLACEHOLDER</h3>
+            <h3>Placeholder</h3>
             <p>Place Holder For Text </p>
         </div>
     </div><!-- end wrapper -->
 
     <script id="hackSpotsTable" type="text/html">
         <table>
-            <tr><th class="tHeader">Name</th><th class="tHeader">Address</th><th class="tHeader">City</th><th class="tHeader">State</th><th class="tHeader">Country</th><th class="">Elsewhere</th></tr>
+            <tr><th class="tHeader">Name</th><th class="tHeader">Address</th><th class="tHeader">City</th><th class="tHeader">State</th><th class="tHeader">Country</th><th class="">Map Link</th></tr>
             {{#rows}}
-                <tr id="{{rowNumber}}" class="spotRow"><td>{{name}}</td><td>{{address}}</td><td>{{city}}</td><td>{{state}}</td><td>{{country}}</td><td><a class="button" href="https://maps.google.com/maps?q={{address}},{{city}},{{state}}" target="_blank">G Map</a> <a class="button" href="http://www.yelp.com/search?find_desc={{name}}&find_loc={{city}},{{state}}" target="_blank">Yelp</a></td></tr>
+                <tr id="{{rowNumber}}" class="spotRow"><td>{{name}}</td><td>{{address}}</td><td>{{city}}</td><td>{{state}}</td><td>{{country}}</td><td><a class="button" href="https://maps.google.com/maps?q={{address}},{{city}},{{state}}" target="_blank">Google</a> </td></tr>
             {{/rows}}
         </table>
     </script>
